@@ -1,0 +1,95 @@
+@-moz-document domain("youtube.com") {
+:root {
+    /* customize the radius of elements using these */
+    --radius: 20px;
+    --entryradius: 0px 20px 20px 0px;
+}
+
+.ytd-thumbnail {
+    border-radius: var(--radius);
+}
+
+ytd-thumbnail.ytd-rich-grid-media:before {
+    border-radius: var(--radius);
+}
+
+#video-preview-container.ytd-video-preview {
+    border-radius: var(--radius);
+}
+
+.html5-video-player {
+    border-radius: var(--radius);
+}
+
+ytd-player, #container.ytd-player{
+    border-radius: var(--radius);
+}
+
+#player-container.ytd-video-preview{
+    background-color: #0000;
+}
+
+.html5-video-player.ytp-inline-preview-mode:not(.ended-mode):not(.cued-mode):not(.unstarted-mode) {
+    overflow: hidden;
+}
+
+#content.ytd-rich-item-renderer ytd-post-renderer.ytd-rich-item-renderer, #content.ytd-rich-item-renderer ytd-shared-post-renderer.ytd-rich-item-renderer{
+    border-radius: var(--radius);
+}
+
+ytd-mini-guide-entry-renderer{
+    border-radius: var(--radius);
+}
+
+ytd-guide-entry-renderer {
+    border-radius: var(--entryradius);
+    width: 90%;
+}
+
+#container.ytd-searchbox{
+    border-radius: var(--radius);
+}
+
+#search-icon-legacy.ytd-searchbox{
+    border-radius: var(--radius);
+    margin-left: 8px;
+}
+
+#sections.ytd-guide-renderer>*.ytd-guide-renderer:not(:last-child){
+    border-bottom: 0px;
+}
+
+ytd-guide-collapsible-section-entry-renderer{
+    display:none;
+}
+
+ytd-guide-collapsible-section-entry-renderer.ytd-guide-section-renderer{
+    border-bottom: 0px;
+    padding-left: 10px
+}
+
+#endpoint.yt-simple-endpoint.ytd-guide-entry-renderer{
+    border-radius: var(--entryradius);
+}
+
+#dismissible.ytd-feed-nudge-renderer {
+    border-radius: var(--radius);
+}
+
+#content-wrapper.ytd-feed-nudge-renderer{
+    border-radius: var(--radius);
+}
+
+#dismissible.ytd-feed-nudge-renderer:first-child:before{
+    height: 0px;
+}
+
+body.en_US.ltr.site-center-aligned.site-as-giant-card.webkit.webkit-537{
+    background-color: #0000;
+}
+
+ytd-button-renderer.style-suggestive[is-paper-button] {
+    border-radius: var(--radius);
+}
+
+}
